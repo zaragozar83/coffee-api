@@ -1,0 +1,56 @@
+# Mac
+._*
+.DS_Store
+.Spotlight-V100
+.Trashes
+HELP.md
+
+# Eclipse
+.buildpath
+.classpath
+*.launch
+.loadpath
+.metadata
+.project
+*.pydevproject
+.settings/
+.springBeans
+
+# Intellij
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
+# Maven
+log/
+target/
+.mvn/
+mvnw
+mvnw.cmd
+
+# Gradle
+*.gradle/
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Java
+*.class
+
+# Directories
+/build/
+/bin/
+/out/
+/deploy/
+
+# Logs
+*.log
