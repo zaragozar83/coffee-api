@@ -4,7 +4,8 @@ pipeline {
         stage("build") {
             steps {
                 echo 'build the application'
-                // gradle clean build
+                withGradle(){
+                    sh './gradlew -v'
             }
         }
 
