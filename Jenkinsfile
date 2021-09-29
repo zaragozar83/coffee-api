@@ -8,21 +8,24 @@ pipeline {
     stages {
         stage("build") {
             steps {
-                echo 'build the application'
+                echo 'build the application...'
                 sh 'gradle -v'
+                echo 'run gradle clean build...'
+                sh 'gradle clean install'
             }
         }
 
         stage("test") {
             steps{
-                echo 'testing the application'
+                echo 'testing the application...'
+                sh 'gradle test'
                 // gradle test
             }
         }
 
         stage("deploy") {
             steps{
-                echo 'deploy the application'
+                echo 'deploy the application...'
             }
         }
     }
