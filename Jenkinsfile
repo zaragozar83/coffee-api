@@ -4,7 +4,7 @@ pipeline {
         stage("build") {
             steps {
                 echo 'build the application'
-                withGradle(){
+                withGradle('Gradle-6.8.3'){
                     sh 'gradle -v'
                 }
             }
