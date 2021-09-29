@@ -11,7 +11,7 @@ pipeline {
                 echo 'build the application...'
                 sh 'gradle -v'
                 echo 'run gradle clean build...'
-                sh 'gradle clean install'
+                sh 'gradle clean build'
             }
         }
 
