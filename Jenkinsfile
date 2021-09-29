@@ -1,12 +1,15 @@
 pipeline {
     agent any
+    
+    tools{
+        gradle 'Gradle-6.8.3'   
+    }
+    
     stages {
         stage("build") {
             steps {
                 echo 'build the application'
-                withGradle(){
-                    sh 'gradle -v'
-                }
+                sh 'gradle -v'
             }
         }
 
